@@ -1,0 +1,342 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .section-header hr {
+        margin-bottom: 1.rem;
+    }
+
+    .section-header h2 {
+        font-size: 20px;
+    }
+     /* Nav-bar */
+     nav a {
+        float: none;
+        width: auto; 
+    }
+
+    /* homme */
+
+    .home{
+        padding: 0 30px 0 30px ;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .home h2 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1.2rem;
+    }
+
+    /*about me */
+    #about-me {
+        height: auto;
+        padding: 50px 15px 60px 15px; 
+    }
+
+    .aboutme-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .aboutme-desc {
+        width: 100%;
+        margin: auto;
+    }
+
+    .aboutme-desc p {
+        font-size: 14px;
+    }
+
+    .aboutme-image{
+        width: 60%;
+    }
+
+    /* My Eexperience */
+    #experience {
+        height: auto;
+        padding: 50px 15px 60px 15px;
+    }
+
+    h3.occupation {
+        font-size: 14px;
+        font-weight: medium;
+    }
+
+    h3.company {
+        font-size: 14px;
+    }
+
+    .experience-child p {
+        font-size: 14px;
+    }
+
+
+    /* This are some of my projects  */
+    #work {
+        height: auto;
+        padding: 50px 15px 60px 15px; 
+    }
+
+    .work-container a{
+        justify-content: flex-start;
+        margin: 5px;
+        width: 160px;
+        height: 180px;
+    }
+
+
+    /* Contact Section */
+    #contact {
+        height: auto;
+        padding: 50px 15px 60px 15px;
+    }
+
+    p.contact-title{
+        font-size: 14px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .embed-googleMap, 
+    .contact-form {
+        width: 100%;
+    }
+
+    .embed-googleMap {
+        margin-bottom: 30px;
+        padding: 10px 10px 32px 10px;
+        height:400px;
+    }
+
+    .contact-form form {
+        font-size: 16px;
+    }
+
+    .contact-form form input[type=text], 
+    .contact-form form input[type=email],
+    .contact-form form textarea {
+        margin-bottom: 15px;
+        
+    }
+
+    .contact-form form input[type=submit] {
+        width: 100px;
+        font-weight: bolder;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .contact-form form {
+        align-items: center;
+    }
+
+    footer p,
+    footer i {
+    margin: 14px;;
+    }
+  
+}
+  
+
+ 
+
+/* Small devices (portrait tablets and large phones, 601px and up) */
+@media only screen and (min-width: 601px) {
+
+   
+
+    /* homme */
+
+    .home{
+        padding: 0 30px 0 30px ;
+
+    }
+
+  
+}
+  
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media screen and (max-width: 768px ) {
+     /* nav-bar */
+    nav a {
+        float: none;
+        width: auto;
+    }
+
+    nav ul {
+       float: right;
+       position: fixed;
+       z-index: 9;
+       right: 0;
+       top: 60px;
+       bottom: 100%;
+       width: auto;
+       height: auto;
+       flex-direction: column;
+       justify-content: space-evenly;
+       background-color: rgba(0,0,0,.8);
+       overflow: hidden;
+       box-sizing: border-box;
+       transition: all 2.s ease-in-out;
+    }
+
+    nav ul a {
+        font-size: 20px;
+
+    }
+
+    nav :checked ~ ul {
+        bottom: 0;
+    }
+
+    nav .icon-burger {
+        display: block;
+    }
+
+    nav :checked ~ .icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+
+    nav :checked ~ .icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    nav :checked ~ .icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+   /*about me */
+   #about-me {
+    height: auto;
+    padding: 50px 30px 60px 30px; 
+   }
+    #experience {
+        height: auto;
+        padding: 50px 30px 60px 30px;
+    }
+
+    #work {
+        height: auto;
+        padding: 50px 30px 60px 30px;
+    }
+
+    /* Contact */
+    #contact {
+        height: auto;
+        padding: 50px 30px 60px 30px;
+    } 
+
+    p.contact-title{
+        font-size: 14px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .embed-googleMap, 
+    .contact-form {
+        width: 100%;
+    }
+
+    .embed-googleMap {
+        margin-bottom: 30px;
+        padding: 10px 10px 32px 10px;
+        height:400px;
+    }
+
+    .contact-form form {
+        font-size: 16px;
+    }
+
+    .contact-form form input[type=text], 
+    .contact-form form input[type=email],
+    .contact-form form textarea {
+        margin-bottom: 15px;
+        
+    }
+
+    .contact-form form input[type=submit] {
+        width: 100px;
+        font-weight: bolder;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .contact-form form {
+        align-items: center;
+    }
+}
+
+
+
+  /* Medium devices (landscape tablets, 769px and up) */
+  @media only screen and (min-width: 769px) {
+   /* nav bar */
+   nav ul {
+    float: right;
+    
+   }
+
+   /* home */
+   .home {
+    padding: 12%;
+
+   }
+
+   /* Experience */
+   
+  }
+    
+  /* Large devices (laptops/desktops, 991px and down) */
+  @media only screen and (max-width: 991px){
+
+    /* nav-bar */
+    nav {
+        padding: 0 3%;
+    }
+    nav ul {
+        width: 75%;
+    }
+
+    /*about me */
+   #about-me {
+    height: auto;
+    padding: 50px 30px 60px 30px; 
+   }
+    #experience {
+        height: auto;
+        padding: 50px 30px 60px 30px;
+    }
+
+    #work {
+        height: auto;
+        padding: 50px 30px 60px 30px;
+    }
+
+    /* Contact */
+    #contact {
+        height: auto;
+        padding: 50px 30px 60px 30px;
+    } 
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .home {
+        
+        padding: 20%;
+    }
+  } 
