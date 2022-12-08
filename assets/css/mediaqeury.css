@@ -86,9 +86,11 @@
 
     .work-container a{
         justify-content: flex-start;
-        margin: 5px;
-        width: 160px;
-        height: 180px;
+        margin-bottom: 18px;
+        /* width: 160px;
+        height: 180px; */
+        width: 100%;
+
     }
 
 
